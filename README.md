@@ -41,27 +41,22 @@ Arguments description:
 
 ## RECOMMENDATION
 
-- --MAX_MEMORY - Maximum number of experiences to store in memory
-- --BATCH_SIZE - Size of the mini-batch used for training.
-- --LR - Learning rate for the neural network optimizer.
-
-
--- **Matrix Size Expansion:**
+- **Matrix Size Expansion:**
 
 Increase the matrix size from 12x12 to a larger dimension (e.g., 20x20 or 30x30) to provide the model with a more challenging and realistic environment.
 
--- **Extended Training:**
+- **Extended Training:**
 
 Extend the training duration to allow the model to adapt and learn optimal strategies in the larger environment fully.
 
--- **Hyperparameter Tuning:**
+- **Hyperparameter Tuning:**
 
 Fine-tune hyperparameters such as learning rate, discount factor, and network architecture to optimize performance in the expanded matrix.
 
--- **Visualization and Analysis:**
+- **Visualization and Analysis:**
 
 Visualize training progress and analyze performance metrics to identify areas for improvement and track progress effectively.
 
--- **Ensemble Learning:**
+- **Ensemble Learning:**
 
 Explore ensemble learning techniques to leverage multiple models' predictions and improve overall performance and robustness.
