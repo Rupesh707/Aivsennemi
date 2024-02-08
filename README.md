@@ -15,7 +15,7 @@ This project requires Python 3.8.5 with the pygame library installed, as well as
 
 The full list of requirements is in `requirements.txt`. 
 
-Note: Please make sure you have updated you`pip` version.
+**Note: Please make sure you have updated you`pip` version.**
 
 ### RUN
 To run and train the AI:
