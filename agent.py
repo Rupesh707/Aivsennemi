@@ -11,7 +11,7 @@ BATCH_SIZE = 1000
 LR = 0.001
 
 class Agent:
-    """Agent class for training and playing Snake game with AI."""
+    """Agent class for training and playing AIvsEnni."""
     
     def __init__(self):
         """
@@ -30,7 +30,7 @@ class Agent:
         Get the current state of the game.
 
         Parameters:
-            game (AIvsEnni): The game object representing the Snake game.
+            game (AIvsEnni): The game object representing game.
 
         Returns:
             numpy.ndarray: Array representing the current state of the game.
@@ -71,11 +71,11 @@ class Agent:
             dir_u,
             dir_d,
             
-            # food location 
-            game.food.x < game.head.x,  # food left
-            game.food.x > game.head.x,  # food right
-            game.food.y < game.head.y,  # food up
-            game.food.y > game.head.y  # f down
+            # ennemi location 
+            game.ennemi.x < game.head.x,  # ennemi left
+            game.ennemi.x > game.head.x,  # ennemi right
+            game.ennemi.y < game.head.y,  # ennemi up
+            game.ennemi.y > game.head.y  # ennemi down
             ]
 
         return np.array(state, dtype=int)
@@ -144,7 +144,7 @@ class Agent:
 
 def train():
     """
-    Train the agent to play the Snake game.
+    Train the agent to play the AIvsEnni game.
     """
     plot_scores = []
     plot_mean_scores = []

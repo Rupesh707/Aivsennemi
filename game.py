@@ -31,7 +31,7 @@ nb_cell = 12
 cell_size = int(size / nb_cell)
 
 class AIvsEnni:
-    """Class representing the Snake game with AI."""
+    """Class representing the AIvsEnni."""
     
     def __init__(self, w=480, h=480):
         """
@@ -90,16 +90,16 @@ class AIvsEnni:
         self.aigame = [self.head]
 
         self.score = 0
-        self.food = None
-        self._place_food()
+        self.ennemi = None
+        self._place_ennemi()
         self.frame_iteration = 0
 
         # Reset memory
         self.moves_history = []
         self.memory = []
 
-    def _place_food(self):
-        """Place food randomly on the grid."""
+    def _place_ennemi(self):
+        """Place ennemi randomly on the grid."""
         x = random.randint(0, (self.w - cell_size)//cell_size)*cell_size
         y = random.randint(0, (self.h - cell_size)//cell_size)*cell_size
 
@@ -107,7 +107,7 @@ class AIvsEnni:
             x = random.randint(0, (self.w - cell_size)//cell_size)*cell_size
             y = random.randint(0, (self.h - cell_size)//cell_size)*cell_size
 
-        self.food = Point(x, y)
+        self.ennemi = Point(x, y)
 
     def play_step(self, action):
         """
@@ -136,10 +136,10 @@ class AIvsEnni:
             reward = -10
             return reward, game_over, self.score
 
-        if self.head == self.food:
+        if self.head == self.ennemi:
             self.score += 1
             reward = 10
-            self._place_food()
+            self._place_ennemi()
         else:
             self.aigame.pop()
 
@@ -193,8 +193,8 @@ class AIvsEnni:
             pygame.draw.rect(self.display, BLUE1, pygame.Rect(pt.x, pt.y, cell_size, cell_size))
             pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x + 4, pt.y + 4, cell_size - 8, cell_size - 8))
 
-        # Draw the food
-        pygame.draw.rect(self.display, RED, pygame.Rect(self.food.x, self.food.y, cell_size, cell_size))
+        # Draw the ennemi
+        pygame.draw.rect(self.display, RED, pygame.Rect(self.ennemi.x, self.ennemi.y, cell_size, cell_size))
 
         text = font.render("Score: " + str(self.score), True, BLACK)
         self.display.blit(text, [0, 0])
@@ -202,7 +202,7 @@ class AIvsEnni:
 
     def _move(self, action):
         """
-        Move the snake based on the action.
+        Move the s based on the action.
 
         Parameters:
             action (list): Action to take.
