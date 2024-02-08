@@ -37,7 +37,11 @@ Arguments description:
 
 ## RESULTS
 
-- After running the model for 5 minutes a scoring up to 3 points was reaching considering the highly limited environment of 12*12 matrices, this results is considered impressive 
+- After running the model for 5 minutes a scoring up to 3 points was reaching considering the highly limited environment of 12*12 matrices.
+
+<p align="center">
+  <img src="Images/Sample_training.png">
+</p>
 
 ## RECOMMENDATION
 
@@ -60,3 +64,7 @@ Visualize training progress and analyze performance metrics to identify areas fo
 - **Ensemble Learning:**
 
 Explore ensemble learning techniques to leverage multiple models' predictions and improve overall performance and robustness.
+
+
+## Note:
+Technical brief will be done during live presentation
