@@ -16,20 +16,17 @@ This project requires Python 3.8.5 with the pygame library installed, as well as
 The full list of requirements is in `requirements.txt`. 
 
 ## Run
-To run and show the game, executes in the snake-ga folder:
+To run and train the AI:
 
 ```python
 python agent.py
 ```
+
 Arguments description:
 
-- --display - Type bool, default True, display or not game view
-- --speed - Type integer, default 50, game speed
-
-
-To train the agent, set in the file agent.py:
-- `params['train'] = True`
-The parameters of the Deep neural network can be changed in *snakeClass.py* by modifying the dictionary `params` in the function `define_parameters()`
+- --MAX_MEMORY - Maximum number of experiences to store in memory
+- --BATCH_SIZE - Size of the mini-batch used for training.
+- --LR - Learning rate for the neural network optimizer.
 
 
 ### **ARCHITECTURE OF APPLICATION**
@@ -37,3 +34,4 @@ The parameters of the Deep neural network can be changed in *snakeClass.py* by m
 <p align="center">
   <img src="Images/Archi.png">
 </p>
+
