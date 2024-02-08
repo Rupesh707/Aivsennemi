@@ -37,7 +37,7 @@ Arguments description:
 
 ## RESULTS
 
-- After running the model for 5 minutes a scoring up to 3 points was reaching considering the highly limited environment of 12*12 matrices.
+- After running the model for 5 minutes an average score of 1.5 points was reaching considering the highly limited environment of 12*12 matrices.
 
 <p align="center">
   <img src="Images/Sample_training.png">
