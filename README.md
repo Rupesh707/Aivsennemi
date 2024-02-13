@@ -66,7 +66,3 @@ Visualize training progress and analyze performance metrics to identify areas fo
 - **Ensemble Learning:**
 
 Explore ensemble learning techniques to leverage multiple models' predictions and improve overall performance and robustness.
-
-
-## Note:
-Technical brief will be done during live presentation
